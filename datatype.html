@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Datatype</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		
+		var kata="Katashi";
+		console.log(typeof kata);
+
+		var age= 20;
+		console.log(typeof age);
+
+		var su;
+		console.log (typeof su);
+
+		var hasmoney=false;
+		console.log(typeof hasmoney);
+
+		var hascar=null;
+		console.log(typeof hascar);
+
+		var day=new Date();
+		console.log(typeof day);
+
+		var home="";
+		console.log(typeof home);
+
+		var kata={
+			name:"Su Yin Yin Tun",
+			age:20,
+			car :false,
+			address:{
+				city :"Yangon",
+				street :"20 street"
+			}
+		}
+
+		document.write(kata);
+		console.log(kata);
+		console.log(kata.address.city);
+		console.log(typeof kata.car);
+
+		var coffee=["suger", "warm warter","cream","milk"];
+		console.log(typeof coffee);
+		console.log(coffee.suger);
+
+
+		val ="aung aung";
+		console.log(val.length);
+
+		val=20000;
+		console.log(val);
+		console.log(typeof val);
+		console.log(val.length);
+
+		val0 =10;
+		val1 =20;
+
+		val = String(val0+val1);
+		console.log(typeof val);
+
+
+		val = false;
+		val = String(val);
+		console.log(typeof val);
+
+		val = new Date();
+		val = String(new Date());
+		console.log( typeof val);
+
+		val =[0,1,2,3];
+		val = String([0,1,2,3]);
+		console.log(typeof val);
+	</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Attribute</title>
+</head>
+<body>
+
+	<div class="container">
+		<h2>Hello Hello</h2>
+		<h2>Hello Mello</h2>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+		
+	</div>
+
+
+	<script type="text/javascript">
+		
+		// console.log(document.getElementsByTagName('h2'));
+		// console.log(document.getElementsByTagName('p'));
+
+		const h2 = document.getElementsByTagName('h2');
+		const p = document.getElementsByTagName('p');
+
+		// * setAttribute
+		h2[0].setAttribute('style','color:yellow');
+		p[1].setAttribute('style','background-color:gray;');
+
+		console.log(h2[0].getAttribute("style"));
+		console.log(p[1].getAttribute("style"));
+
+		// * removeAttribute
+		h2[0].removeAttribute("style");
+		p[1].removeAttribute("style");
+
+		h2[0].textContent ="hello";   //Note:  When you set textContent, innerText & innerHTMl property, all  child nodes are removed and replaced by only one new text node.
+		h2[0].innerText ="Hello";
+		h2[1].innerHTML ="hello";
+
+	</script>
+
+</body>
+</html>

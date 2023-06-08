@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Auto Writing</title>
+</head>
+<body>
+
+	<div>
+		<p id="text"></p>
+	</div>
+
+
+	<script type="text/javascript">
+
+		var gettext = document.getElementById("text");
+		const par = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum";
+
+		let a = 0;
+		let b = par.length;
+	
+		
+
+		// function start(){
+		// 	gettext.textContent += par[a]; 
+		// 	a++;
+
+		// 	if(a===b){
+		// 		clearInterval(stop);
+		// 	}
+		// };
+
+		// var stop= setInterval(start,30);
+
+		//--------------------------------------------
+
+		function start(){
+			gettext.innerHTML += par[a];
+			a++;
+
+			stop(a,b);
+		}
+
+		function stop(){
+			if(a === b){
+				clearInterval(stopp);
+			}
+		}
+
+		let stopp = setInterval(start,10);
+
+	
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Datetime Format</title>
+</head>
+<body>
+
+	<small>
+		Copyright @ <span id="cpy">2000</span> Run Free Developer Team
+	</small>
+
+	<script type="text/javascript">
+		
+		var date = new Date();
+		console.log(date);
+		// document.write(date);
+
+
+		// var takedata = new Date().getDate();
+		var takedate = date.getDate();
+		console.log(takedate);
+		// document.write(takedate);
+
+
+		var takehours = date.getHours();
+		console.log(takehours);
+
+		var takemin = date.getMinutes();
+		console.log(takemin);
+
+		var takesec = date.getSeconds();
+		console.log(takesec);
+
+		// 1s =1000ms
+
+		var time = date.getTime();
+		console.log(time);
+
+		var datenow = Date.now();
+		console.log(datenow);
+
+		var months = date.getMonth();
+		console.log(months);
+
+		var day= date.getDay();
+		console.log(day);
+
+		var year= date.getYear();
+		console.log(year);
+
+		var utcyear = date.getUTCFullYear();
+		console.log(utcyear);
+
+		var fullyrs = date.getUTCFullYear();
+		document.getElementById("cpy").textContent =fullyrs;
+
+	</script>
+
+</body>
+</html>

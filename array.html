@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		 var person = {
+		 	name :"SuYin",
+		 	age : 21,
+		 	married : false
+		 };
+
+		 console.log(person.married);
+
+		 // var girls = new Array ("su su","maw maw","hla hla","mya mya");
+		 // console.log(typeof girls);
+		 // console.log(girls[1]);
+		 // console.log(girls[2]);
+
+		 // var boys = ["mg mg", "kyaw kyaw", "zaw zaw", "min min"];
+		 // console.log(boys[2]);
+
+
+		 var a=[1000,2000,3000,4000,5000,6000];
+		 console.log(a[5]);
+
+		 var friend ="Aye Su";
+		 console.log(friend.length);
+		 console.log(friend[5]);
+
+		 var z =[];
+		 z[0]= "orange";
+		 z[5]= "apple";
+		 z[3]= "pineapple";
+		 z[2]= "blueberry";
+		 console.log(z);
+		 console.log(z[2]);
+
+		 // var c = ["red", "blue", "yellow", "green", "violet"];
+		 // console.log(c[2]);
+		 // console.log(c.indexOf("violet"));
+
+		 var ako = [1,2,3,0]; //true
+		 // console.log(Array.isArray(ako));
+
+		 // var abc = "abc"; //false
+		 // console.log(Array.isArray(abc));
+
+		 // console.log(typeof ako);
+		 // console.log(ako.toString());
+
+		 // console.log(ako);
+		 // console.log("Array to String tostring = " +ako.toString());
+		 // console.log(typeof ako);
+
+		 console.log(ako);
+		  console.log("Array to String tostring = " +ako.toString());
+		  console.log(ako.join("*")); 
+
+		  var abc=["pink", "white" ,"blue", "black"];
+		  console.log(abc);
+		  console.log(abc[2]);
+
+		  abc[4]="green";
+		  abc[1]="violet";
+		  abc[3]="blue";
+		  console.log(abc);
+
+		  abc.push("orange");
+		  abc.push("red");
+		  console.log(abc);
+
+		  abc.unshift("tomato");
+		  abc.unshift("gray");
+		  console.log(abc);
+
+
+		  abc.pop();
+		  abc.pop();
+		  console.log(abc);
+
+		  abc.shift();
+		  abc.shift();
+		  console.log(abc);
+
+		  delete abc[3];
+		  console.log(abc);
+
+		  var q = abc.splice(0,2);
+		  console.log(q);
+
+		  var a1=["su su","maw maw","hla hla","mya mya","ba ba", "aye aye", "zar zar"];
+		  var a2=["mg mg", "kyaw kyaw", "zaw zaw", "min min"];
+		  var a3=[10,20,30,40];
+
+		  console.log(a1+a2);
+		  console.log(a1.concat(a2));
+
+		  var a4= a1.concat(a3);
+		  console.log(a4);
+		  console.log(a4[5]);
+
+		  console.log(a4.sort());
+		  console.log(a4.reverse());
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

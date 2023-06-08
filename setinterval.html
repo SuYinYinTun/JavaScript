@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Set Interval</title>
+</head>
+<body>
+
+	<div>
+		<h1 id="welcome">Welcome from our site....</h1>
+	</div>
+
+	<div>
+		<button type="button" id="start" onclick="start()">Start Alert</button>
+		<button type="button" id="stop" onclick="stop()">Stop Alert</button>
+
+	</div>
+
+	<br/><hr/>
+
+	<div>
+		<form action="" method="">
+			<input type="text" name="text" id="url"/>  
+			<input type="button" name="gotext" id="gourll" onclick="gourl()" value="URL" />
+			<input type="button" name="" id="favv" class="" onclick="fav('https://tryhackme.com/')" value="fav"/>
+			
+		</form>
+	</div>
+
+	<hr/>
+	<div>
+		<img id="img1" class="" width="250px" height="250jpx" onmousemove="over()" onmouseout="out()"/>
+		
+	</div>
+	<br><hr>
+
+
+<!-- select box ကိုနိပ်တာနဲ့ select box ထဲကအတိုင်း shoe ကို ပြောင်းအောင် လုပ်တာ -->
+	<div>
+		<img src="./Photos/shoe.png" id="shoe" class="" alt="shoe" width="200px">
+		<select name="size" id="size" class="" onchange="abc(this)"> <!--  သူ့ကိုယ်သူ သိစေချင်လို့ this ကိုထည့်တာ -->
+			<option disabled selected>Select</option>
+			<option value="50px">Small</option>
+			<option value="200px">Medium</option>
+			<option value="350px">Large</option>
+		</select>
+	</div>
+
+<!------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+	<script type="text/javascript">
+
+		window.setInterval(bye,4000); //1s === 1000ms
+
+		//window.setTimeout(bye,4000);
+
+		function bye(){
+			document.getElementById("welcome").textContent ="See you again....!";
+		}
+
+		function alerrt(){
+			window.alert("Hello I am alert");
+		}
+
+		var hello;
+
+		function start(){
+			//console.log("hello");
+			//window.setInterval(start,3000);
+			alerrt();
+
+			hello = window.setInterval(start,4000);
+
+		}
+
+		function stop(){
+			//console.log("mello");
+			window.clearInterval(hello);
+		}
+
+		function gourl(){
+			//console.log("hello");
+         
+         var geturl = document.getElementById("url").value;
+         //console.log(geturl);
+
+         window.location ="https://www."+geturl+".com";  //find for site
+		}
+		
+		// function fav(){
+		// 	//console.log("hi");
+		// 	window.location='https://tryhackme.com/';
+		// }
+
+		var getimg = document.getElementById("img1");
+
+		window.onload = function(){
+			getimg.src ="./Photos/image1.png";
+		}
+
+
+		function over(){
+			getimg.src ="./Photos/image2.png";
+		}
+
+
+		function out(){
+			getimg.src ="./Photos/image3.png";
+		}
+
+
+
+ // select box ကိုနိပ်တာနဲ့ select box ထဲကအတိုင်း shoe ကို ပြောင်းအောင် လုပ်တာ
+
+		function abc(th){
+			//console.log("av");
+
+			//let getsizes = document.getElementById("size").value;
+			// console.log(getsize); 
+
+			//console.log(th.value);
+
+
+			let size = th.value;
+			let getshoe = document.getElementById("shoe");
+			getshoe.style.width= size; //ပုံတွေကိုပြောင်းရင် style ထည့်ပေးရတယ် မထည့်ရင် error တတ်တယ်။
+		}
+
+//------------------------------------------------------------------------------------------------------------
+
+
+ 
+
+		
+	</script>
+
+</body>
+</html>

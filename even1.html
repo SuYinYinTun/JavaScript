@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event</title>
+</head>
+<body>
+
+	<div class="container">
+		<h3>Show Hide</h3>
+
+		<div id="para">
+			<p id="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			
+		</div>
+
+		<button type="button" id="hide" class="" onclick="hide()">Hide</button>
+
+
+	</div>
+
+
+
+	<script type="text/javascript">
+
+		let getpara= document.getElementById("para");
+
+		let hidebtn=document.getElementById("hide");
+
+		function hide(){
+		// 	// console.log("hello");
+
+		// 	getpara.style.display ="none";
+		// 	hidebtn.innerText = "Show";
+
+		// 	if(getpara.style.display === "none"){
+		// 		getpara.style.display = "block";
+		// 		hidebtn.innerText ="Hide";
+		// 	}else{
+		// 		getpara.style.display ="none";
+		// 		hidebtn.innerText="Show";
+		// 	}
+
+		
+
+
+
+		
+
+
+
+		hidebtn.addEventListener('click',function(){
+			// console.log("hello");
+
+			if(getpara.style.display === "none"){
+				getpara.style.display = "block";
+				hidebtn.innerHTML = "Hide Me";
+
+			}else{
+				getpara.style.display === "none";
+				hidebtn.textContent ="Show";
+			}
+		});
+	}
+
+
+		
+	</script>
+
+</body>
+</html>

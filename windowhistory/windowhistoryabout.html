@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Window History</title>
+	<style type="text/css">
+		body{
+			display: flex;
+			justify-content: center;
+		}
+
+		nav{
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+
+		}
+
+		a{
+			text-decoration: none;
+			color: #fff;
+		}
+
+		li{
+			width: 200px;
+			background: steelblue;
+			padding: 20px 0px;
+			text-align: center;
+			transition: all 0.5s;
+
+		}
+
+		li:hover{
+			background: gray;
+		}
+
+		.active{
+			background: gray;
+		}
+
+	.historybar span{
+		cursor: pointer;
+			
+		}
+
+		h1{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+	<div>
+		<nav>
+			<ul>
+				<li><a href="./windowhistory.html" >Home</a></li>
+				<li class="active"><a href="./windowhistoryabout.html">About</a></li>
+				<li><a href="./windowhistoryservice.html">Service</a></li>
+				<li><a href="./windowhistoryblog.html">Blog</a></li>
+				<li><a href="./windowhistorylocation.html">Location</a></li>
+			</ul>
+		</nav>
+
+		<div class="historybar">
+			<span onclick="prev()">Previous</span> | <span onclick="next()">Next</span>
+		</div>
+
+		<div>
+			<h1>I am About Page</h1>
+		</div>
+	</div>
+
+
+		<script type="text/javascript">
+
+		function prev(){
+			//console.log("hello");
+			window.history.go(-1);
+		}
+
+		function next(){
+		//console.log("hello");
+			window.history.go(1);
+		}
+	</script>
+</body>
+</html>

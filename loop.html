@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loop</title>
+</head>
+<body>
+
+
+
+
+	<script type="text/javascript">
+
+		// For Loop
+		// 		Start	end			incre/decre 
+		// for(statement1,statement2,statement3)
+		
+
+		// var i=0;
+
+		// for(i; i<10; i++){
+		// 	console.log("The inside value is "+i);
+		// }
+
+		// console.log("The outside value is "+ i);
+
+		// for(j=0; j<=9; j++){
+		// 	console.log(j);
+		// }
+
+		// console.log("the outside value is "+j);
+
+
+		for (a=0; a<10; a++){
+			if(a===2){
+				console.log(a+ " is mu fav number.");
+			}
+		}
+
+		// For In Loop
+
+		// for(key in object){
+		// 	code flow
+		// }
+
+		// var students = {
+		// 	name : "Ko Ko",
+		// 	city : "Yangon",
+		// 	parent : "U Kyaw"
+		// }
+
+		// // console.log(students);
+
+		// for(key in students){
+		// 	// console.log(key);
+		// 	// console.log(students);
+		// 	// console.log(students.city);
+		// 	document.write(students[key]);
+		// }
+
+
+		// const teams =["ko ko","nyi nyi","kyaw kyaw"];
+		// // console.log(teams[1]);
+
+		// for(key in teams){
+		// 	document.write(teams[key]);
+		// }
+
+
+		// For of loop
+
+		const teams = ["ko ko","nyi nyi","kyaw kyaw"];
+
+		for(team of teams){
+			// console.log(teams);
+			console.log(team);
+		}
+
+
+		// While Loop
+
+		// start
+
+		// while(condition){
+		// 	before incre;
+		// 	code flow;
+		// 	after incre;
+		// }
+
+
+		//  var a=0; //before while loop
+
+		// while(a < 10){
+		// 	a++;
+		// 	console.log(a)
+		// }
+
+
+		// var b=0; //After while loop
+		// while(b<10){
+		// 	console.log(b);
+		// 	a++;
+		// }
+
+		// var fruits=["apple","orange","grape","lemon"];
+
+		// var i=0;
+
+		// while(i < fruits.length){
+		// 	document.write(fruits[i]);
+		// 	i++;
+		// }
+
+
+
+
+
+
+		// Do while loop
+
+		// start
+
+		// do{
+		// 	before print inc/dec
+		// 	code flow
+		// 	after print inc/dec
+		// }while(condition)
+
+		// var a=0;
+
+		// do{
+		// 	console.log(a)
+		// 	a++;
+		// }while(a<10);
+
+		// let i=10;
+
+		// do{
+		// 	i--;
+		// 	console.log(i);
+		// }while(i>0);
+
+
+
+
+		// for Each
+
+		// 	main.forEach(function(value,index,arry){
+		// 		code flow;
+		// 	}
+
+
+		//var colors=["red", "blue","white","black"];
+
+		// color.forEach(function(color){
+
+		// 	console.log(color);
+
+		// })
+
+		// color.forEach(function(color,idx){
+
+		// 	console.log(idx,color);
+
+		// })
+
+		// color.forEach(function(color,idx,array){
+
+		// 	console.log(idx,color,array);
+
+		// })
+
+		// colors.forEach(function(color){
+		// 	console.log(color)
+		// })
+
+		// colors.forEach((color)=>{
+		// 	console.log(color);
+		// })
+
+
+		// MAP
+
+
+		// const fruits=["apple","orange","tomato","grape"];
+
+		// fruits.map(function(fruit){
+		// 	console.log(fruit);
+		// }
+
+		// let colors = fruits.map(function(fruit){
+		// 	return fruit;
+		// });
+
+		// console.log(colors);
+
+
+		// const users=[
+		// {id:1,name:"Kyaw Kyaw"},
+		// {id:2,name:"Tun Tun"},
+		// {id:3,name:"Oo Oo"},
+		// ];
+		// console.log(users);
+
+		// const getname= users.map(user=>user.name);
+		// console.log(getname);
+
+		// Filter
+		var ages =[20,30,40,50,10,5,8,11,18,18];
+
+		// var getover18 = ages.filter(age=>age===18);
+		// console.log(getover18);
+
+
+		var getover18 = ages.filter(age=>{
+			return age>18});
+		console.log(getover18);
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

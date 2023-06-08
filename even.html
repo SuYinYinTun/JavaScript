@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event</title>
+</head>
+<body>
+
+	<!-- <div class="container">
+		<h3>Show Hide</h3>
+
+		<div id="para">
+			<p id="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			
+		</div>
+
+		<button type="button" id="hide" class="" onclick="hide()" >Hide</button> -->
+
+		
+
+		<div>
+			<!-- <p id="rf" style="font-size: 25px;">We're from Run Free</p>
+
+			<button type="button" id="red">Red</button>
+			<button type="button" id="green">Green</button>
+			<button type="button" id="yellow">Yellow</button>
+			<button type="button" id="pink">Pink</button>
+			<button type="button" id="blue">Blue</button>
+			<button type="button" id="steel">Steelblue</button>
+			<button type="button" id="italic">Italic</button>
+			<button type="button" id="bold">Bold</button>
+			<button type="button" id="und">Underline</button>
+
+		</div> -->
+
+
+
+<form action="" method="">
+	<label>Name</label>
+	<input type="text" name="text" id="name" class="" onchange="fun1()" >
+
+	<br/><br/>
+
+	<label for="gender">Gender</label>
+	<select name="gender" id="gender" class="" onchange="fun2()">
+		<option disabled selected>Choosen Your Gender</option>
+		<option value="1">Male</option>
+		<option value="2">Female</option>
+	</select>
+
+	<br/><br/>
+
+	<label for="country">Country</label>
+	<select name="country" id="country" class="" onchange="fun3()">
+		<option disabled selected>Choosen Your Country</option>
+		<option value="mm">Myanmar</option>
+		<option value="th">Thailand</option>
+	</select>
+
+	<div id="myanmar">
+		<input type="radio" name="city" id="cityygn" value="yangon"><label for="cityygn">Yangon</label>
+		<input type="radio" name="city" id="citymdy" value="mandalay"><label for="citymdy">Mandalay</label>
+		<input type="radio" name="city" id="citymk" value="myeik"><label for="citymk">Myeik</label>
+
+		
+	</div>
+
+		<div id="thailand">
+		<input type="radio" name="city" id="citybang" value="bang"><label for="citybang">Bandkok</label>
+		<input type="radio" name="city" id="chinmai" value="chinmai"><label for="chinmai">ChinMai</label>
+		<input type="radio" name="city" id="chinmai" value="phuket"><label for="phuket">Phuket</label>
+
+		
+	</div>
+</form>
+
+	</div>
+
+
+
+	<script type="text/javascript">
+
+		// let getpara= document.getElementById("para");
+
+		// let hidebtn=document.getElementById("hide");
+
+		//function hide(){
+			// console.log("hello");
+
+			// getpara.style.display ="none";
+			// hidebtn.innerText = "Show";
+
+		// 	if(getpara.style.display === "none"){
+		// 		getpara.style.display = "block";
+		// 		hidebtn.innerText ="Hide";
+		// 	}else{
+		// 		getpara.style.display ="none";
+		// 		hidebtn.innerText="Show";
+		// 	}
+
+
+
+		// }
+
+
+		// hidebtn.addEventListener('click',function(){
+		// 	// console.log("hello");
+
+		// 	if(getpara.style.display === "none"){
+		// 		getpara.style.display = "block";
+		// 		hidebtn.innerHTML = "Hide Me"
+
+		// 	}else{
+		// 		getpara.style.display ==="none";
+		// 		hidebtn.textContent ="Show"
+		// 	}
+		// })
+
+
+			// document.getElementById("red").addEventListener('click',function(){
+			// 	document.getElementById("rf").style.color="red";
+			// });
+
+			// document.getElementById("green").addEventListener('click',function(){
+			// document.getElementById("rf").style.color="green";
+			// });
+		
+			// document.getElementById("yellow").addEventListener('click',function(){
+			// document.getElementById("rf").style.color="yellow";
+			// });
+
+			// document.getElementById("pink").addEventListener('click',function(){
+			// document.getElementById("rf").style.color="pink";
+			// });
+
+			// document.getElementById("blue").addEventListener('click',function(){
+			// document.getElementById("rf").style.color="blue";
+			// });
+
+			// document.getElementById("steel").addEventListener('click',function(){
+			// document.getElementById("rf").style.color="steelblue";
+			// });
+
+			// document.getElementById("italic").addEventListener('click',function(){
+			// 	document.getElementById("rf").style.fontStyle="italic";
+			// });
+
+			// document.getElementById("bold").addEventListener('click',function(){
+			// 	document.getElementById("rf").style.fontWeight="bold";
+			// });
+			// document.getElementById("und").addEventListener('click',function(){
+			// 	document.getElementById("rf").style.textDecoration="underline";
+			// });
+
+			function fun1(){
+				let textname = document.getElementById("name");
+				// console.log(textname);
+				textname.value = textname.value.toUpperCase();
+			}
+
+			function fun2(){
+				// console.log("hi");
+
+				const gender = document.getElementById("gender");
+				// console.log(gender.value);
+				// console.log(typeof gender.value);
+
+				switch(gender.value){
+					case "1":
+					window.alert("Welcome Guys");
+					break;
+					case "2":
+					window.alert("Welcome Lady");
+					break;
+				}
+			};
+
+
+			document.getElementById('myanmar').style.display="none";
+
+			document.getElementById('thailand').style.display="none";
+
+			function fun3(){
+
+				const country = document.getElementById("country");
+
+				switch(country.value){
+					case 'mm':
+					document.getElementById('myanmar').style.display="block";
+					document.getElementById('thailand').style.display="none";
+					break;
+
+					case 'th':
+					document.getElementById('thailand').style.display="block";
+						document.getElementById('myanmar').style.display="none";
+					break;
+				}
+
+			}
+		
+	</script>
+
+</body>
+</html>

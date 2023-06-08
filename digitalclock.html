@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Digital Clock</title>
+	<style type="text/css">
+		body{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#screen{
+			border: 1px solid #ccc;
+			padding: 15px;
+			border-radius: 15px;
+			background-repeat: #ddd;
+			color: blueviolet;
+			letter-spacing: 2px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<h1 id="screen"><!-- 8:46 PM Tuesday --></h1>
+
+	<script type="text/javascript">
+
+		var getscreen =document.getElementById("screen"); 
+		const dayss =["Sunday", "Monday", "Tuesday", "Wednesday","Thursday", "Friday", "Saturday"];
+
+		function start(){
+			let getdate =new Date();
+			let hours =getdate.getHours();
+			let minutes =getdate.getMinutes();
+			let seconds =getdate.getSeconds();
+			let days = getdate.getDay();
+			let ampm;
+
+			switch(hours>12){
+				case true:
+				ampm = "PM";
+				hours = hours -12;
+				break;
+				case false:
+				ampm ="AM";
+				break;
+			}
+
+			let clocks= `${hours}:${minutes}:${seconds} ${ampm} ${dayss[days]}`;
+
+		getscreen.innerHTML=clocks;
+
+		}
+
+		
+		start();
+		setInterval(start,1000);
+		
+	</script>
+
+</body>
+</html>

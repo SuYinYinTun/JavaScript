@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.container{
+			width: 300px;
+			background: #f4f4f4;
+			padding: 10px;
+			box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+		}
+
+		.container h2{
+			text-align: center;
+		}
+
+		.container label{
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		.container .form-control{
+			width: 100%;
+			display: block;
+			padding: 5px;
+			margin-bottom: 10px;
+		}
+
+		.btn{
+			width: 100%;
+			font-size: 16px;
+			background: darkblue;
+			color:#fff;
+			border:none;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<h2> Your Name  = <span id="replacename">Test</span></h2>
+
+		<label for="firstname">First Name</label>
+		<input type="text" name="firstname" id="firstname" class="form-control" autocomplete="off" autofocus />
+
+		<label for="lastname">Last Name</label>
+		<input type="text" name="lastname" id="lastname" class="form-control" autocomplete="off" autofocus />
+
+		<button type="button" onclick="getdata()" class="btn">Get Name</button>
+		
+	</div>
+
+	<script type="text/javascript">
+		// function fun1(name){
+		// 	console.log("Hello"+name);
+		// }
+
+		// fun1("Mg Mg");
+		// fun1();
+
+		// function fun2(name ="Su Su"){
+		// 	console.log("I am "+name);
+		// }
+		// fun2();
+		// fun2("Aye");
+
+		// function multi(a, b="Ko Ko", c){
+		// 	console.log("Hello I am"+a);
+		// 	console.log("Hellow I am preson"+b);
+		// 	console.log("I am"+c);
+		// }
+
+		// multi("Aye Aye","Ko Gyi");
+
+
+		// function getdata(){
+			// console.log("Hello");
+
+			// var getfirname = document.getElementById("firstname").value;
+			// var lastname = document.getElementById("lastname").value;
+			// // console.log(getfirname);
+
+			// var replace = document.getElementById("replacename");
+			// // replace.innerText= `${getfirname} ${lastname}`;
+			//  // replace.innerText= getfirname, lastname;
+
+			// document.getElementById("replacename").innerText =`${f=getfirname} ${lastname}`;
+			// document.getElementById("firstname").value="";
+			// document.getElementById("lastname").value="";
+			// document.getElementById("firstname").focus();
+			
+
+		// }
+
+		// function getdata(){
+		// 	var firstname = document.getElementById("firstname");
+		// 	var lastname = document.getElementById("lastname");
+
+		// 	 var replace = document.getElementById("replacename");
+
+		// 	 replace.innerText = `${firstname.value} ${lastname.value}`;
+		// 	 firstname.value="";
+		// 	 lastname.value="";
+		// 	 firstname.focus();
+		// }
+
+
+
+
+		// Arrow Function
+
+		// var ano= ()=>{
+		// 	return"hello";
+		// }
+		// console.log(ano());
+
+
+		// var ano = ()=>"hello";	
+		// console.log(ano());
+
+		// var ano = ()=>("hello");	
+		// console.log(ano());
+
+
+		// var ano =() => ({name : "Kyaw Gyi"});
+		// console.log(ano());
+
+		// var regg=function(num1){
+		// 	return num1-20;
+		// }
+		// console.log(regg(30));
+
+		// var reg=function(n1,n2){
+		// 	return n1*n2;
+		// }
+		// console.log(reg(1,2));
+
+		// var arr =(num1)=>{
+		// 	return num1+10;
+		// }
+		// console.log(arr(20));
+
+		 // var arr =num1=>{
+		 // 	return num1-20;
+		 // }
+		 // console.log(arr(50));
+
+		 var arr= num1=>num1+2;
+		 console.log (arr(20)); 
+
+
+	</script>
+
+</body>
+</html>

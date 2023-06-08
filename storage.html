@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Storages</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// Local Storage
+		// Add Item(key,vale)
+		localStorage.setItem("name","Kyaw Gyi");
+		localStorage.setItem("age",21);
+		localStorage.setItem("address","Yangon");
+
+		// Get Item
+		var name =localStorage.getItem("name");
+		console.log(name);
+		var age =localStorage.getItem("age");
+		console.log(age);
+		var address= localStorage.getItem("address");
+		console.log(address);
+
+		// Update Item
+		localStorage.setItem("name","Aye Aye");
+		localStorage.setItem("age",22);
+		localStorage.setItem("address","Mandalay");
+
+		// Remove Item
+		localStorage.removeItem("name");
+		localStorage.removeItem("age");
+		localStorage.removeItem("address");
+
+
+		// Session Storage
+
+
+		sessionStorage.setItem("name","Su Su");
+		sessionStorage.setItem("age",20);
+		sessionStorage.setItem("email","suyinyintun@gmail.com")
+
+		var name=sessionStorage.getItem("name");
+		console.log(name);
+		var name=sessionStorage.getItem("age");
+		console.log(age);
+		var email=sessionStorage.getItem("email");
+		console.log(email);
+
+		sessionStorage.setItem("name","Su Yin");
+		sessionStorage.setItem("age",25);
+		sessionStorage.setItem("email","valentina@gmail.com")
+
+		sessionStorage.removeItem("age");
+
+
+	</script>
+</body>
+</html>
